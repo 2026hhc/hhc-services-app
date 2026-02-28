@@ -208,13 +208,7 @@ export default function App() {
             <button key={i} style={{height:60,borderRadius:14,border:k==="→"?"none":`1px solid ${dark}`,background:k==="→"?`linear-gradient(135deg,${teal},${cyan})`:"rgba(255,255,255,0.04)",color:k==="→"?"#0a1628":k==="⌫"?red:light,fontSize:k==="→"?16:24,fontWeight:600,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center"}} onClick={()=>{if(k==="⌫"){setPin(p=>p.slice(0,-1));setErr("");}else if(k==="→")login();else if(pin.length<4)setPin(p=>p+k);}}>{k}</button>
           ))}
         </div>
-        <div style={{fontSize:12,color:"#3a5068",textAlign:"center",lineHeight:2.2}}>
-          <b style={{color:gray}}>Codes démo</b><br/>
-          Hyacinthe 0000 · Samir 1111 · Zenab 2222<br/>
-          Nadine 3333 · Awa 4444<br/>
-          Steffi 5555 · Melissa 6666 · Rita 7777<br/>
-          Farida 8888 · Aimée 9999 · Intérim. 0101
-        </div>
+        <div style={{fontSize:12,color:"#3a5068",textAlign:"center",marginTop:8}}>Entrez votre code PIN</div>
       </div>
     </div>
   );
